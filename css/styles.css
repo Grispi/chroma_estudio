@@ -41,7 +41,10 @@ a{
   padding: 0 .5rem;
   color:#a0a0a0;;
 }
-
+a.logo{
+  text-decoration: none;
+  padding: 0;
+}
 ul{
  list-style: none;
  margin: 0;
@@ -104,9 +107,9 @@ div.gallery{
 
 
  .responsive {
-   float:left;
-padding: 2px;
-margin:0;
+  float:left;
+  padding: 2px;
+  margin:0;
    width: 33.3%
  }
 
@@ -132,6 +135,7 @@ padding: 5px;
     }
 }
 
+
 .footer {
   background-color: #efefef;
   text-align: center;
@@ -140,3 +144,5 @@ padding: 5px;
 
 
 }
+/* @media screen and (max-width: 768px)
+nave-bar ---> do something smaller/*
