@@ -54,8 +54,10 @@ nav{
 a{
   text-decoration: none;
   padding: 0 .5rem;
-  color: black;
-  /* color:#808080; */
+  /* color: black; */
+    color:#808080;
+    font-weight: 900;
+
 }
 a.menu-nav {
   padding-right: 2rem;
@@ -64,6 +66,11 @@ a.menu-nav {
 a.logo{
   text-decoration: none;
   padding: 0;
+}
+a:focus, a:hover {
+  color:black;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 ul{
@@ -85,16 +92,19 @@ ul{
   display: flex;
   justify-content: flex-start;
   /* font-size: 22px; */
+
   font-size: 20px;
   font-weight: 800;
 }
-
-.dropdown {
+.collapse.in{
+  display: flex;
+}
+.dropdown{
   display:flex;
   /* font-size: 17px; */
   font-size: 15px;
   font-weight: 800;
-  /* display: none; */
+  display: none;
 }
 
 .dropdown a{

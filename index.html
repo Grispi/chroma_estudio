@@ -7,8 +7,14 @@
 <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 <link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
 <link rel="stylesheet" href="css/styles.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
 
 </head>
 <body>
@@ -17,17 +23,20 @@
       <div><a class="logo" href="index.html"><img alt="Logo Chroma-Estudio" src="images/logo2.png" width="200"></a>
       </div>
       <div class="menus">
+
       <ul class="navigation">
-          <li><a class="menu-nav" href="">PROJECTS</a></li>
+          <li><a class="menu-nav" data-toggle="collapse" data-target="#demo" href="#demo" >PROJECTS</a></li>
           <!-- <li><a class="navbar-brand" href="studio.html">STUDIO</a></li> -->
           <li><a class="menu-nav" href="contactus.html">CONTACT US</a></li>
         </ul>
-        <ul class="dropdown">
+
+        <ul class="dropdown collapse" id="demo">
           <li><a href="residential.html">RESIDENTIAL</a></li>
           <li><a href="multifamily.html">MULTI-FAMILY</a></li>
           <li><a  href="commercial.html">COMMERCIAL</a></li>
           <li><a   href="offices.html">OFFICES</a></li>
         </ul>
+
       </div>
   </div>
       <ul class="social-menu">
@@ -192,6 +201,5 @@
       <li>instagram</li>
     </ul>
   </div>
-
 
 </body>
