@@ -9,46 +9,63 @@
     font-style: normal;
 }
 
-.clearfix:after {
-   content: "";
-   visibility: hidden;
-   display: block;;
-   clear: both;
-}
-
 *{
   box-sizing: border-box;
 }
 
 body{
-    /* font-family: "arial", "helvetica"; */
+
+  /* font-family: "arial", "helvetica"; */
   /* font-family: 'Lato', sans-serif;'; */
   font-family: 'bebas_neueregular';
-line-height: 100%;
-padding: 0 20px;
+  line-height: 100%;
+  padding: 0 12%;
+  background-color: #ededed;
 }
 
 header{
-  margin: 10px;
+  /* margin-top: 15px;
+  margin-right: 18px;
+  margin-bottom: 0px;
+  margin-left: 18px; */
+  /* position: fixed;
+background: #ededed;
+height: 50px; */
+/* top: 0; */
+/* width: 76%;
+padding: 10px 18px 15px 18px; */
+
+
+position: fixed;
+background: #ffffff;
+/* height: 48px; */
+top: 0;
+right: 0;
+width: 100%;
+padding: 10px 13.5% 10px 13.5%;
 }
 
 nav{
-display: flex;
+  display: flex;
+
 }
 
 a{
   text-decoration: none;
   padding: 0 .5rem;
-  color:#a0a0a0;;
+  color:#808080;
 }
+
 a.logo{
   text-decoration: none;
   padding: 0;
 }
+
 ul{
  list-style: none;
  margin: 0;
  padding: 0;
+
 }
 
 .menus{
@@ -62,40 +79,49 @@ ul{
 .navigation{
   display: flex;
   justify-content: flex-start;
-  font-size: 21px;
+  font-size: 22px;
 }
 
 .dropdown {
   display:flex;
   font-size: 17px;
+  display: none;
 }
 
 .dropdown a{
-  color:#a0a0a0;
-}
-.dropdown a:hover{
-  color: black;
-}
-a.navbar-project:hover, a.navbar-brand:hover {
-    color: black;
-    display: block;
+  color:#808080;
 }
 
+.dropdown a:hover{
+  color: black;
+  text-decoration: none;
+}
+
+a.menu-nav:hover {
+  color: black;
+  display: block;
+  text-decoration: none;
+}
 
 .social-menu {
   display: flex;
   align-items: center;
 }
+/* --------------menu bar ends ------------ */
 
 .gallery-container{
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+
 }
 
 div.gallery{
-
-  border:1px solid #ccc;
+  /* border:1px solid transparent; */
+  background-color: white;
+  /* background-color: #ededed; */
 }
+
  div.gallery:hover{
    border:1px solid #777;
  }
@@ -105,21 +131,21 @@ div.gallery{
    height: auto;
  }
 
-
  .responsive {
   float:left;
-  padding: 2px;
+  padding: 15px;
   margin:0;
    width: 33.3%
  }
 
  h3{
    margin: 0;
-padding: 5px;
+   padding: 20px;
+   text-align: center;
  }
+
  .gallery-container{
    box-sizing: border-box;
-
  }
 
  @media only screen and (max-width: 700px) {
@@ -134,7 +160,6 @@ padding: 5px;
         width: 100%;
     }
 }
-
 
 .footer {
   background-color: #efefef;
