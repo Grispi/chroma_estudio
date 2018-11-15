@@ -17,7 +17,8 @@ body{
 
   /* font-family: "arial", "helvetica"; */
   /* font-family: 'Lato', sans-serif;'; */
-  font-family: 'bebas_neueregular';
+  /* font-family: 'bebas_neueregular'; */
+  font-family: 'Raleway', sans-serif;
   line-height: 100%;
   padding: 0 12%;
   background-color: #ededed;
@@ -53,7 +54,11 @@ nav{
 a{
   text-decoration: none;
   padding: 0 .5rem;
-  color:#808080;
+  color: black;
+  /* color:#808080; */
+}
+a.menu-nav {
+  padding-right: 2rem;
 }
 
 a.logo{
@@ -79,13 +84,17 @@ ul{
 .navigation{
   display: flex;
   justify-content: flex-start;
-  font-size: 22px;
+  /* font-size: 22px; */
+  font-size: 20px;
+  font-weight: 800;
 }
 
 .dropdown {
   display:flex;
-  font-size: 17px;
-  display: none;
+  /* font-size: 17px; */
+  font-size: 15px;
+  font-weight: 800;
+  /* display: none; */
 }
 
 .dropdown a{
@@ -138,14 +147,16 @@ div.gallery{
   float:left;
   padding: 15px;
   margin:0;
-   width: 33.3%
+  width: 33.3%
  }
 
  h3{
    margin: 0;
    padding: 20px;
    text-align: center;
+   font-size: 22px;
  }
+
 
  .gallery-container{
    box-sizing: border-box;
