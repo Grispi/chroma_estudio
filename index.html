@@ -7,15 +7,93 @@
 <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 <link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
 <link rel="stylesheet" href="css/styles.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('#residentialFilter a').click(function(){
+      $('div.responsive').css({
+        'display': 'none',
+      });
+      $('div.house').parent().css({
+        'display': '',
+      });
+    });
+
+
+    $('#multiFamilyFilter a').click(function(){
+      $('div.responsive').css({
+        'display': 'none',
+      });
+      $('div.multiFamily').parent().css({
+        'display': '',
+      });
+    });
+
+
+    $('#commercialFilter a').click(function(){
+      $('div.responsive').css({
+        'display': 'none',
+      });
+      $('div.commercial').parent().css({
+        'display': '',
+      });
+    });
+
+
+    $('#officesFilter a').click(function(){
+      $('div.responsive').css({
+        'display': 'none',
+      });
+      $('div.offices').parent().css({
+        'display': '',
+      });
+    });
+
+    $('#projectsFilter a').click(function(){
+      $('div.responsive').css({
+        'display': '',
+      });
+  
+    });
+
+  });
+      // $('div.offices').css({
+      //   display:none;
+      // });
+
+
+  // $(document).ready(function() {
+  //   $('#residentialFilter li a').click(function() {
+  //     // fetch the class of the clicked item
+  //     var ourClass = $(this).attr('class');
+  //     // reset the active class on all the buttons
+  //     $('#residentialFilter li').removeClass('active');
+  //     // update the active state on our clicked button
+  //     $(this).parent().addClass('active');
+  //     if(ourClass == 'all') {
+  //       // show all our items
+  //       $('#ourHolder').children('div.item').show();
+  //     }
+  //     else {
+  //       // hide all elements that don't share ourClass
+  //       $('#ourHolder').children('div:not(.' + ourClass + ')').hide();
+  //       // show all elements that do share ourClass
+  //       $('#ourHolder').children('div.' + ourClass).show();
+  //     }
+  //     return false;
+  //   });
+  // });
 
 
 
+
+
+
+</script>
 </head>
 <body>
   <header>
@@ -25,16 +103,16 @@
       <div class="menus">
 
       <ul class="navigation">
-          <li><a class="menu-nav" data-toggle="collapse" data-target="#demo" href="#demo" >PROJECTS</a></li>
+          <li id="projectsFilter"><a class="menu-nav" data-toggle="collapse" data-target="#demo" href="#demo" >PROJECTS</a></li>
           <!-- <li><a class="navbar-brand" href="studio.html">STUDIO</a></li> -->
           <li><a class="menu-nav" href="contactus.html">CONTACT US</a></li>
         </ul>
 
         <ul class="dropdown collapse" id="demo">
-          <li><a href="residential.html">RESIDENTIAL</a></li>
-          <li><a href="multifamily.html">MULTI-FAMILY</a></li>
-          <li><a  href="commercial.html">COMMERCIAL</a></li>
-          <li><a   href="offices.html">OFFICES</a></li>
+          <li id="residentialFilter"><a  href="#">RESIDENTIAL</a></li>
+          <li id="multiFamilyFilter"><a href="#" >MULTI-FAMILY</a></li>
+          <li id="commercialFilter"><a  href="#" >COMMERCIAL</a></li>
+          <li id="officesFilter"><a href="#" >OFFICES</a></li>
         </ul>
 
       </div>
@@ -58,7 +136,7 @@
     </div>
   </div> -->
   <div class="responsive">
-    <div class="gallery">
+    <div class="gallery multiFamily">
       <article>
         <img alt="Boedo 531" src="images/boedo531.jpg" width="293" height="293">
           <div class="description">
@@ -68,7 +146,7 @@
     </div>
   </div>
   <div class="responsive">
-    <div class="gallery">
+    <div class="gallery multiFamily">
       <article>
         <img alt="Bolivia 1144" src="images/bolivia_hall.jpg" width="293" height="293">
           <div class="description">
@@ -78,7 +156,7 @@
     </div>
   </div>
   <div class="responsive">
-    <div class="gallery">
+    <div class="gallery house">
       <article>
         <img alt="Banfield House" src="images/banfield_house.jpg" width="293" height="293">
         <div class="description">
@@ -88,7 +166,7 @@
     </div>
   </div>
   <div class="responsive">
-    <div class="gallery">
+    <div class="gallery house">
       <article>
         <img alt="Bellavista house" src="images/bellavista_house.jpg" width="293" height="293">
         <h3>Bellavista house</h3>
@@ -96,7 +174,7 @@
     </div>
     </div>
     <div class="responsive">
-      <div class="gallery">
+      <div class="gallery offices">
       <article>
         <img alt="Cype Office" src="images/cype_office.jpg" width="293" height="293">
         <h3>Cype Office</h3>
@@ -104,7 +182,7 @@
     </div>
   </div>
   <div class="responsive">
-    <div class="gallery">
+    <div class="gallery commercial">
       <article>
         <img alt="Doctor Obra San Martin" src="images/doctor_obra_sm.jpg" width="293" height="293">
         <h3>Doctor Obra San Martin</h3>
@@ -112,7 +190,7 @@
     </div>
   </div>
   <div class="responsive">
-    <div class="gallery">
+    <div class="gallery commercial">
       <article>
         <img alt="Doctor Obra Caballito" src="images/doctor_obra.jpg" width="293" height="293">
         <h3>Doctor Obra Caballito</h3>
@@ -120,7 +198,7 @@
     </div>
   </div>
   <div class="responsive">
-    <div class="gallery">
+    <div class="gallery house">
       <article>
         <img alt="Ezeiza house" src="images/ezeiza_house2.jpg" width="293" height="293">
         <h3>Ezeiza House</h3>
@@ -128,7 +206,7 @@
     </div>
   </div>
   <div class="responsive">
-    <div class="gallery">
+    <div class="gallery offices">
       <article>
         <img alt="Go Building office" src="images/gobuilding_office.jpg" width="293" height="293">
         <h3>Go Building Office</h3>
@@ -136,7 +214,7 @@
     </div>
   </div>
   <div class="responsive">
-    <div class="gallery">
+    <div class="gallery multiFamily">
       <article>
         <img alt="Jaramillo 1685" src="images/jaramillo1685.jpg" width="293" height="293">
         <h3>Jaramillo 1685</h3>
@@ -144,7 +222,7 @@
     </div>
   </div>
   <div class="responsive">
-    <div class="gallery">
+    <div class="gallery commercial">
       <article>
         <img alt="Lacoste Alto Palermo" src="images/lacoste_altopalermo2.jpg" width="293" height="293">
         <h3>Lacoste Alto Palermo</h3>
@@ -152,7 +230,7 @@
     </div>
   </div>
   <div class="responsive">
-    <div class="gallery">
+    <div class="gallery house">
       <article>
         <img alt="Leandro House" src="images/leandro_house2.jpg" width="293" height="293">
         <h3>Leandro House</h3>
@@ -160,7 +238,7 @@
     </div>
   </div>
   <div class="responsive">
-    <div class="gallery">
+    <div class="gallery offices">
       <article>
         <img alt="Ln Office" src="images/ln_office2.jpg" width="293" height="293">
         <h3>Ln Office</h3>
@@ -168,7 +246,7 @@
     </div>
   </div>
   <div class="responsive">
-    <div class="gallery">
+    <div class="gallery house">
       <article>
         <img alt="Palermo house" src="images/plan_palermo2.jpg" width="293" height="293">
         <h3>Palermo House</h3>
@@ -176,7 +254,7 @@
     </div>
   </div>
   <div class="responsive">
-    <div class="gallery">
+    <div class="gallery house">
       <article>
         <img alt="Puerto Pampa" src="images/puerto_pampa2.jpg" width="293" height="293">
         <h3>Puerto Pampa</h3>
@@ -184,7 +262,7 @@
     </div>
   </div>
   <div class="responsive">
-    <div class="gallery">
+    <div class="gallery offices">
       <article>
         <img alt="SCV office" src="images/scv_office2.jpg" width="293" height="293">
         <h3>SCV office</h3>
