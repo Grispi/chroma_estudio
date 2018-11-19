@@ -74,6 +74,7 @@ a:focus, a:hover {
   font-weight: bold;
 }
 
+
 ul{
  list-style: none;
  margin: 0;
@@ -112,12 +113,12 @@ ul{
   color:#808080;
 }
 
-.dropdown a:hover{
+.dropdown a:hover, .dropdown a:focus{
   color: black;
   text-decoration: none;
 }
 
-a.menu-nav:hover {
+a.menu-nav:hover, a.menu-nav:active {
   color: black;
   display: block;
   text-decoration: none;
