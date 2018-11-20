@@ -12,8 +12,10 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
-    <script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
 </head>
+
 <body>
 <header>
   <nav class="navigation-bar">
@@ -42,51 +44,71 @@
     </ul>
   </nav>
 </header>
+
 <!-- <div class="gallery-container"> -->
 
-<div style="margin-top:70px">
+  <div style="margin-top:70px">
 
-<p class="p-contact">
-  Fill in below, or contact us at <strong>info@chroma-estudio.com</strong>
-<br/>  Or you can call us:
-    <strong>11.5561.6972</strong>
 
-</p>
+      <div class="contactMap">
+        <p class="p-contact">
+          Fill in below, or contact us at <strong>info@chroma-estudio.com</strong>
+          <br/>
+          Or you can call us: <strong>11.5561.6972</strong>
+            <br/>
+            <br/>
 
+            </p>
+
+
+<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3284.53195684732!2d-58.426229!3d-34.5907077!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca78967ea51b%3A0x189c41ba753ac264!2sRa%C3%BAl+Scalabrini+Ort%C3%ADz+1611%2C+C1414DOD+CABA%2C+Argentina!5e0!3m2!1ses-419!2suk!4v1542710224735" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3284.53195684732!2d-58.426229!3d-34.5907077!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca78967ea51b%3A0x189c41ba753ac264!2sRa%C3%BAl+Scalabrini+Ort%C3%ADz+1611%2C+C1414DOD+CABA%2C+Argentina!5e0!3m2!1ses-419!2suk!4v1542710224735" width="500" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
 </div>
 
-  <form>
-    <div class="form-group">
-      <label for="InputName">Your Name:</label>
-      <input type="name" class="form-control"  placeholder="Your Name">
+<form>
+  <!-- <form action="https://formspree.io/grispi@hotmail.com" method="POST"> -->
+    <div class="form-group col-sm-6">
+      <div class="form-group">
+        <label for="InputName">Your Name:</label>
+        <input type="name" class="form-control"  placeholder="Your Name">
+      </div>
+      <div class="form-group">
+        <label for="InputEmail1">Email address:</label>
+        <input type="email" id="email" name="email" class="form-control"  placeholder="Email">
+      </div>
+      <div class="form-group">
+        <label for="InputEmail1">Phone number:</label>
+        <input type="tel" id="tel" name="tel" class="form-control"  placeholder="Phone number">
+      </div>
+
     </div>
 
-    <div class="form-group">
-      <label for="InputEmail1">Email address:</label>
-      <input type="email" class="form-control"  placeholder="Email">
-    </div>
-
-    <div class="form-group">
+    <div class="form-group col-sm-6">
       <label  for="InputSubject">Subject</label>
       <input type="subject" class="form-control"  placeholder="Subject">
     </div>
-</div>
-<div class="form-group">
-    <label for="InputMessage">Message</label>
-    <textarea  class="form-control" rows="3" placeholder="Message"></textarea>
-</div>
 
+    <div class="form-group col-sm-6">
+        <label for="InputMessage">Message</label>
+        <textarea  class="form-control" rows="5" placeholder="Message"></textarea>
     </div>
-    <button type="submit" class="btn btn-default">Submit</button>
+
+    <div class="form-group col-sm-12">
+      <button type="submit" class="btn btn-default" >Send me!</button>
+    </div>
+
   </form>
-  <div class="footer">
-    <ul>
-      <li>Tel: (54911) 6868 2874</li>
-      <li>mail:contact@chroma-estudio.com</li>
-      <li>facebook</li>
-      <li>instagram</li>
-    </ul>
-  </div>
+
+
+
+  <footer class="footer">
+    <span class="text-muted"> Tel: (54911) 6868 2874 - mail:contact@chroma-estudio.com -
+    <a class="facebook-icon" href="https://www.facebook.com/chromaestudio.com.ar" ><img alt="facebook icon @clipartmax.com" src="images/f-icon-black-c.png" width="25"></a>
+    <a class="instagram-icon" href="https://www.instagram.com/chroma_estudio/"><img alt="instagram icon @clipartmax.com" src="images/i-icon-b-2.png" width="25"></a></span>
+  </footer>
+
+
 
 </body>
 </html>

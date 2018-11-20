@@ -188,14 +188,12 @@ div.gallery{
 }
 
 .footer {
-
+position: fixed;
   text-align: center;
-  bottom: 0;
   width: 100%;
-  /* position: fixed; */
-margin-bottom: 10px;
-
-
+/* background: #ffffff; */
+bottom: 0;
+right: 0;
 
 }
 
@@ -205,10 +203,21 @@ form{
 
 .p-contact{
    line-height: 1.8;
-
   padding: 20px;
   text-align: left;
   font-size: 22px;
 }
+
+iframe{
+  margin: 10px;
+}
+.contactMap{
+  display: flex;
+
+}
+
+
+
+
 /* @media screen and (max-width: 768px)
 nave-bar ---> do something smaller/*
