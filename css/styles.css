@@ -22,6 +22,8 @@ body{
   line-height: 100%;
   padding: 0 12%;
   background-color: #ededed;
+padding-bottom: 70px;
+padding-top: 70px;
 }
 
 header{
@@ -191,9 +193,10 @@ div.gallery{
 position: fixed;
   text-align: center;
   width: 100%;
-/* background: #ffffff; */
+background: #ffffff;
 bottom: 0;
 right: 0;
+padding: 8px
 
 }
 
