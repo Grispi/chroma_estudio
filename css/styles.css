@@ -23,7 +23,7 @@ body{
   padding: 0 12%;
   background-color: #ededed;
 padding-bottom: 70px;
-padding-top: 70px;
+
 }
 
 header{
@@ -208,7 +208,7 @@ form{
    line-height: 1.8;
   padding: 20px;
   text-align: left;
-  font-size: 22px;
+  font-size: 17px;
 }
 
 iframe{
