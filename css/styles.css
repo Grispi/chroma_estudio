@@ -191,63 +191,37 @@ div.gallery{
 }
 
 .footer {
-  position: fixed;
+position: fixed;
   text-align: center;
   width: 100%;
-  background: #ffffff;
-  bottom: 0;
-  right: 0;
-  padding: 8px
+background: #ffffff;
+bottom: 0;
+right: 0;
+padding: 8px
 
 }
 
-
-#buttom-form{
-    padding-bottom: 60px;
-}
-
-.studio{
-  line-height: 1.8;
-  padding: 20px;
-  font-size: 17px;
-  text-align: justify;
-  padding: 20px 16%;
-  margin:0 -16% 30px -16%;
-
-  background-color:#8080802e;
+form{
+  margin-top: 20px;
 }
 
 .p-contact{
-  line-height: 1.8;
+   line-height: 1.8;
   padding: 20px;
   text-align: left;
   font-size: 17px;
 }
 
 iframe{
-  margin-bottom: 30px;
+  margin: 10px;
 }
 .contactMap{
   display: flex;
 
 }
-/* .text-name{
-  color: black;
-  font-weight: bold;
-   text-shadow: 2px 2px #d2cbcb;
-  font-size: 100px;
-  padding: 450px 0 0 0;
-  text-align: center;
-  animation: text-from-bottom 1.5s 1 cubic-bezier(.165,.84,.44,1);
-} */
-/* form{
-  margin-top: 40px;
-  background-color: #8080802e;
-} */
-.parallax{
-  margin:0 -16%;
-  margin-top:-50px;
-}
+
+
+
 
 /* @media screen and (max-width: 768px)
 nave-bar ---> do something smaller/*
