@@ -20,7 +20,7 @@ body{
   /* font-family: 'bebas_neueregular'; */
   font-family: 'Raleway', sans-serif;
   line-height: 100%;
-  padding: 0 12%;
+  padding: 0 10%;
   background-color: #ededed;
   padding-bottom: 70px;
   padding-top:  70px;
@@ -277,15 +277,19 @@ iframe{
 }
 
 .row{
-padding: 10px 5%;
+padding: 10px 0;
 }
 
 @media only screen and (max-width: 768px) {
    .row {
      padding: 0;
    }
-    .col-md-3{
+    .col-md-4{
       padding-top: 15px;
+    }
+    .col-md-8{
+      width: 100%;
+      padding-top: 10px;
     }
 }
 
