@@ -154,6 +154,44 @@ a.menu-nav:hover, a.menu-nav:active {
   display: flex;
   align-items: center;
 }
+
+/* hamburger edit responsive */
+
+label {
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    width: 26px;
+    float: right;
+}
+#toggle {
+    display: none;
+}
+
+
+@media only screen and (max-width: 500px) {
+    label {
+        display: block;
+        cursor: pointer;
+    }
+    .menus {
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+    .menus a {
+        display: block;
+        border-bottom: 1px solid #EAEAEB;
+        margin: 0;
+
+    }
+    #toggle:checked + .menus {
+        display: block;
+    }
+
+
+}
 /* --------------menu bar ends ------------ */
 
 .gallery-container{
