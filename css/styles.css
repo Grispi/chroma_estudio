@@ -18,7 +18,13 @@ body{
   /* font-family: "arial", "helvetica"; */
   /* font-family: 'Lato', sans-serif;'; */
   /* font-family: 'bebas_neueregular'; */
-  font-family: 'Raleway', sans-serif;
+
+  /* font-family: 'Open Sans', sans-serif; */
+  /* font-family: 'Raleway', sans-serif; */
+
+  /* font-family: 'Fira Mono', monospace; */
+    /* font-family: 'Barlow', sans-serif; */
+  font-family: 'Open Sans Condensed', sans-serif;
   line-height: 100%;
   padding: 0 10%;
   background-color: #ededed;
@@ -57,10 +63,13 @@ background: #ffffff;
 top: 0;
 right: 0;
 width: 100%;
-padding: 10px 13.5% 10px 13.5%;
+padding: 10px 12% 10px 12%;
 z-index: 1;
 }
 
+a.logo img{
+  width: 220px;
+}
 
 nav{
   display: flex;
@@ -69,14 +78,14 @@ nav{
 
 ul.navigation li a, ul.dropdown li a {
   text-decoration: none;
-  padding: 0 .5rem;
+  padding: 0 7px;
   /* color: black; */
-  color:#808080;
-  font-weight: 900;
+  color:#585858;
+  font-weight: 100;
 }
-
-
-
+ul.dropdown li a {
+  font-weight: 200;
+}
 a.menu-nav {
   padding-right: 2rem;
 }
@@ -88,7 +97,7 @@ a.logo{
 a:focus, a:hover {
   color:black;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 900;
 }
 
 a.projectName{
@@ -117,22 +126,24 @@ ul.social-menu a{
 }
 
 .navigation{
+  font-family: 'Open Sans', sans-serif;
   display: flex;
   justify-content: flex-start;
-  /* font-size: 22px; */
-
-  font-size: 20px;
-  font-weight: 800;
+  font-size: 21px;
+  /* letter-spacing: 2px; */
+  /* font-weight: 600; */
 }
 .collapse.in{
   display: flex;
 }
 .dropdown{
   display:flex;
-  /* font-size: 17px; */
+  font-family: 'Open Sans',sans-serif;
   font-size: 15px;
-  font-weight: 800;
+  letter-spacing: 1px;
+  /* font-weight: 800; */
   display: none;
+  text-transform: lowercase;
 }
 
 .dropdown a{
@@ -142,12 +153,15 @@ ul.social-menu a{
 .dropdown a:hover, .dropdown a:focus{
   color: black;
   text-decoration: none;
+  font-weight: 700;
+
 }
 
 a.menu-nav:hover, a.menu-nav:active {
   color: black;
   display: block;
   text-decoration: none;
+  font-weight: 600;
 }
 
 .social-menu {
@@ -272,10 +286,14 @@ div.gallery{
  }
 
  h3{
-   margin: 0;
-   padding: 20px;
-   text-align: center;
-   font-size: 22px;
+  margin: 0;
+  padding: 20px;
+  text-align: left;
+  text-transform:lowercase;
+  font-size: 25px;
+  text-transform: lowercase;
+  letter-spacing: 2px;
+
  }
 
 
