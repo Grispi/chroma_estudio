@@ -177,25 +177,29 @@ a.menu-nav:hover, a.menu-nav:active {
   padding: 0;
 /* width: 200px; */
   background-color: #f1f1f1;
-  filter:opacity(80%);
+  filter:opacity(90%);
   border:0;
+
 }
 .dropdown-header{
   margin-left: 5px;
-padding: 3px;
-font-size: 20px;
-line-height: 1;
-color: black;
-font-weight: 900;
+  padding: 3px;
+  font-size: 24px;
+  line-height: 1;
+  color: black;
+  font-weight: 900;
+  letter-spacing: 1px;
 }
 
 ul.hamburger-menu li a{
 text-decoration: none;
 padding: 10px;
 /* color: black; */
-color:#808080;
+color:#585858;
 font-weight: 900;
-font-size: 15px;
+font-size: 18px;
+letter-spacing: 1px;
+
 }
 ul.hamburger-menu li{
 
