@@ -70,13 +70,40 @@
 <body>
   <header>
     <nav class="navigation-bar">
-      <div>
+      <div class="logo-icon">
         <a class="logo" href="index.html">
           <img alt="Logo Chroma-Estudio" src="images/logo2.png" width="200">
         </a>
       </div>
+
+ <!-- Mobile-navigation bar -->
+
       <label for="toggle">&#9776;</label>
       <input type="checkbox" id="toggle"/>
+
+      <div class="dropdown-menu pull-right">
+        <ul class="hamburger-menu">
+          <li class="dropdown-header">PROJECTS</li>
+           <li id="residentialFilter"><a href="#">RESIDENTIAL</a></li>
+           <li id="multiFamilyFilter"><a href="#" >MULTI-FAMILY</a></li>
+           <li id="commercialFilter"><a  href="#" >COMMERCIAL</a></li>
+           <li id="officesFilter"><a href="#" >OFFICES</a></li>
+           <li class="divider"></li>
+           <li class="dropdown-header">CONTACT</li>
+           <li><a href="contactus.html">CONTACT US</a></li>
+           <li class="divider"></li>
+           <li class="dropdown-header">SOCIAL</li>
+           <li>
+             <a class="facebook-icon" href="https://www.facebook.com/chromaestudio.com.ar">FACEBOOK</a>
+           </li>
+           <li>
+             <a class="instagram-icon" href="https://www.instagram.com/chroma_estudio/">INSTAGRAM</a>
+           </li>
+        </ul>
+      </div>
+
+ <!-- Ends Mobile-navigation bar -->
+
       <div class="menus">
         <ul class="navigation">
           <li id="projectsFilter"><a class="menu-nav" data-toggle="collapse" data-target="#demo" href="#demo" >PROJECTS</a></li>
@@ -90,7 +117,7 @@
           <li id="officesFilter"><a href="#" >OFFICES</a></li>
         </ul>
       </div>
-
+      <div class="menu-social">
       <ul class="social-menu">
         <li>
           <a class="facebook-icon" href="https://www.facebook.com/chromaestudio.com.ar" >
@@ -103,6 +130,7 @@
           </a>
         </li>
       </ul>
+    </div>
     </nav>
   </header>
 

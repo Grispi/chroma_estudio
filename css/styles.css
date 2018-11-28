@@ -67,12 +67,12 @@ nav{
 
 }
 
-ul.navigation li a, ul.dropdown li a{
+ul.navigation li a, ul.dropdown li a {
   text-decoration: none;
   padding: 0 .5rem;
   /* color: black; */
-    color:#808080;
-    font-weight: 900;
+  color:#808080;
+  font-weight: 900;
 }
 
 
@@ -156,26 +156,71 @@ a.menu-nav:hover, a.menu-nav:active {
 }
 
 /* hamburger edit responsive */
+.dropdown-menu{
+  display: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+/* width: 200px; */
+  background-color: #f1f1f1;
+  filter:opacity(80%);
+  border:0;
+}
+.dropdown-header{
+  margin-left: 5px;
+padding: 3px;
+font-size: 20px;
+line-height: 1;
+color: black;
+font-weight: 900;
+}
 
+ul.hamburger-menu li a{
+text-decoration: none;
+padding: 10px;
+/* color: black; */
+color:#808080;
+font-weight: 900;
+font-size: 15px;
+}
+ul.hamburger-menu li{
+
+padding: 5px 0;
+
+}
+
+ul.hamburger-menu li a:hover{
+  color: black;
+}
 label {
-    margin: 0 40px 0 0;
     font-size: 26px;
-    line-height: 70px;
+    line-height: 23px;
     display: none;
     width: 26px;
     float: right;
 }
+
 #toggle {
     display: none;
 }
 
 
 @media only screen and (max-width: 500px) {
-    label {
-        display: block;
-        cursor: pointer;
+    header{
+    padding: 10px 5% 10px 5%
     }
-    .menus {
+
+    label {
+      display: block;
+      cursor: pointer;
+      position: absolute;
+      right: 2%;
+    }
+
+    .logo-icon img{
+      width:150px;
+    }
+    .menus, .menu-social{
         text-align: center;
         width: 100%;
         display: none;
@@ -186,7 +231,7 @@ label {
         margin: 0;
 
     }
-    #toggle:checked + .menus {
+    #toggle:checked + .dropdown-menu {
         display: block;
     }
 
@@ -249,6 +294,7 @@ div.gallery{
     }
 }
 
+
 @media only screen and (max-width: 500px) {
     .responsive {
         width: 100%;
@@ -265,7 +311,9 @@ div.gallery{
   padding: 8px
 
 }
-
+.facebook-icon{
+  padding: 10px;
+}
 
 #buttom-form{
     padding-bottom: 60px;
