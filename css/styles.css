@@ -444,13 +444,29 @@ padding: 10px 0;
       padding-top: 10px;
     }
 }
+
 .img-responsive{
   cursor: pointer;
 }
-/* carousel example */
-.carousel{
-    margin-top: 20px;
+
+ /* modal edition */
+.modal-body {
+
+    padding: 8px;
 }
+
+.modal-footer{
+  padding:5px;
+
+}
+
+
+/* carousel */
+
+/* .carousel{
+    margin-top: 20px;
+} */
+
 .carousel .item{
     min-height: 200px; /* Prevent carousel from being distorted if for some reason image doesn't load */
 }
