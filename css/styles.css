@@ -460,7 +460,11 @@ padding: 10px 0;
 
 }
 
-
+.myImg{
+  width: 50%;
+  float:right;
+  padding:7px;
+}
 /* carousel */
 
 /* .carousel{
