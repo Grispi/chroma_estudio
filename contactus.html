@@ -45,33 +45,72 @@
 
 <body >
   <header>
-
     <nav class="navigation-bar">
-      <div>
-        <a class="logo" href="index.html"><img alt="Logo Chroma-Estudio" src="images/logo2.png" width="200"></a>
+      <div class="logo-icon">
+        <a class="logo" href="index.html">
+          <img alt="Logo Chroma-Estudio" src="images/logo2.png" width="200">
+        </a>
       </div>
+
+      <!-- Mobile-navigation bar -->
+
+      <label class="hamburger-icon" for="toggle">&#9776;</label>
+      <input type="checkbox" id="toggle"/>
+
+      <div class="dropdown-menu pull-right">
+        <ul class="hamburger-menu">
+          <li class="dropdown-header">PROJECTS</li>
+          <li id="residentialFilter"><a href="index.html">PROJECTS</a></li>
+           <!-- <li id="residentialFilter"><a href="#">RESIDENTIAL</a></li>
+           <li id="multiFamilyFilter"><a href="#" >MULTI-FAMILY</a></li>
+           <li id="commercialFilter"><a  href="#" >COMMERCIAL</a></li>
+           <li id="officesFilter"><a href="#" >OFFICES</a></li> -->
+           <li class="divider"></li>
+           <li class="dropdown-header">CONTACT</li>
+           <li><a href="contactus.html">CONTACT US</a></li>
+           <li class="divider"></li>
+           <li class="dropdown-header">SOCIAL</li>
+           <li>
+             <a class="facebook-icon" href="https://www.facebook.com/chromaestudio.com.ar" target="_blank">FACEBOOK</a>
+           </li>
+           <li>
+             <a class="instagram-icon" href="https://www.instagram.com/chroma_estudio/" target="_blank" >INSTAGRAM</a>
+           </li>
+        </ul>
+      </div>
+
+      <!-- Ends Mobile-navigation bar -->
 
       <div class="menus">
         <ul class="navigation">
-            <li id="projectsFilter"><a class="menu-nav" data-toggle="collapse" data-target="#demo" href="index.html">PROJECTS</a></li>
-            <!-- <li><a class="navbar-brand" href="studio.html">STUDIO</a></li> -->
-            <li><a class="menu-nav contact" href="contactus.html" style="color: black">CONTACT</a></li>
+          <li id="projectsFilter"><a class="menu-nav" data-toggle="collapse" data-target="#demo" href="index.html" >PROJECTS</a></li>
+          <!-- <li><a class="navbar-brand" href="studio.html">STUDIO</a></li> -->
+          <li><a class="menu-nav" href="contactus.html">CONTACT</a></li>
         </ul>
-
         <ul class="dropdown collapse" id="demo">
-            <li id="residentialFilter"><a  href="#">RESIDENTIAL</a></li>
-            <li id="multiFamilyFilter"><a href="#" >MULTI-FAMILY</a></li>
-            <li id="commercialFilter"><a  href="#" >COMMERCIAL</a></li>
-            <li id="officesFilter"><a href="#" >OFFICES</a></li>
+          <li id="residentialFilter"><a  href="#">RESIDENTIAL</a></li>
+          <li id="multiFamilyFilter"><a href="#" >MULTI-FAMILY</a></li>
+          <li id="commercialFilter"><a  href="#" >COMMERCIAL</a></li>
+          <li id="officesFilter"><a href="#" >OFFICES</a></li>
         </ul>
       </div>
-
+      <div class="menu-social">
       <ul class="social-menu">
-          <li><a class="facebook-icon" href="https://www.facebook.com/chromaestudio.com.ar" ><img alt="facebook icon @clipartmax.com" src="images/f-icon-black-c.png" width="30"></a></li>
-          <li><a class="instagram-icon" href="https://www.instagram.com/chroma_estudio/"><img alt="instagram icon @clipartmax.com" src="images/i-icon-b-2.png" width="30"></a></li>
+        <li>
+          <a class="facebook-icon" href="https://www.facebook.com/chromaestudio.com.ar" target="_blank">
+            <img alt="facebook icon @clipartmax.com" src="images/f-icon-black-c.png" width="30">
+          </a>
+        </li>
+        <li>
+          <a class="instagram-icon" href="https://www.instagram.com/chroma_estudio/" target="_blank">
+            <img alt="instagram icon @clipartmax.com" src="images/i-icon-b-2.png" width="30">
+          </a>
+        </li>
       </ul>
+    </div>
     </nav>
   </header>
+
 
 <!-- <div class="gallery-container"> -->
 
@@ -157,11 +196,11 @@
 
 
 </div>
-  <footer class="footer">
-    <span class="text-muted"> Tel: (54911) 6868 2874 - mail:info@chroma-estudio.com -
-    <a class="facebook-icon" href="https://www.facebook.com/chromaestudio.com.ar" ><img alt="facebook icon @clipartmax.com" src="images/f-icon-black-c.png" width="25"></a>
-    <a class="instagram-icon" href="https://www.instagram.com/chroma_estudio/"><img alt="instagram icon @clipartmax.com" src="images/i-icon-b-2.png" width="25"></a></span>
-  </footer>
+<footer class="footer">
+  <span class="text-muted"> Tel: (54911) 6868 2874 - mail:info@chroma-estudio.com -
+  <a class="facebook-icon" href="https://www.facebook.com/chromaestudio.com.ar" target="_blank"><img alt="facebook icon @clipartmax.com" src="images/f-icon-black-c.png" width="25"></a>
+  <a class="instagram-icon" href="https://www.instagram.com/chroma_estudio/" target="_blank"><img alt="instagram icon @clipartmax.com" src="images/i-icon-b-2.png" width="25"></a></span>
+</footer>
 <!--
 <script type="text/javascript">
 
