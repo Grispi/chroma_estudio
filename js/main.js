@@ -5,17 +5,19 @@ $(document).ready(function() {
       $("#modal-gallery").modal('show');
 
   });
+
+
   var carouselItems = $('.img-responsive').clone().map((index, el) =>
   $('<div class="item" />').toggleClass('active', index === 0).append(el)[0]);
   $('.carousel-inner').html(carouselItems).html(carouselIndicators);
 
 
-  var carouselIndicators = $('.col-md-4').map((index, el) =>
+  var carouselIndicators = $('.myImg').map((index, el) =>
   $('<li data-target="#carousel-example-generic" />').attr("data-slide-to", index)[0]);
   $('.carousel-indicators').html(carouselIndicators);
 
   $('.carousel').carousel();
-  
+
 
 });
 
