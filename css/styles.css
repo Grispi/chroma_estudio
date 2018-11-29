@@ -401,6 +401,7 @@ form h2{
   margin-top: 40px;
   background-color: #8080802e;
 } */
+
 .parallax {
 
     background-image: url("../images/contactbackground.jpg");
@@ -425,7 +426,6 @@ form h2{
         min-height: 234px;
       }
     }
-}
 
 
 .row{
