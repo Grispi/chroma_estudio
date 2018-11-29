@@ -1,5 +1,10 @@
 $(document).ready(function() {
 
+  $(".img-responsive").click(function(event){
+
+      $("#modal-gallery").modal('show');
+
+  });
   var carouselItems = $('.img-responsive').clone().map((index, el) =>
   $('<div class="item" />').toggleClass('active', index === 0).append(el)[0]);
   $('.carousel-inner').html(carouselItems).html(carouselIndicators);
@@ -10,11 +15,9 @@ $(document).ready(function() {
   $('.carousel-indicators').html(carouselIndicators);
 
   $('.carousel').carousel();
-  $("#modal-gallery").modal("show");
   
+
 });
-
-
 
   //  /* activate the carousel */
    // $("#modal-carousel").carousel({interval:false});
