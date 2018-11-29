@@ -444,6 +444,16 @@ padding: 10px 0;
       padding-top: 10px;
     }
 }
+/* carousel example */
+.carousel{
+    margin-top: 20px;
+}
+.carousel .item{
+    min-height: 200px; /* Prevent carousel from being distorted if for some reason image doesn't load */
+}
+.carousel .item img{
+    margin: 0 auto; /* Align slide image horizontally center */
+}
 
 
 /* @media screen and (max-width: 768px)
