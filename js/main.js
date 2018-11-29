@@ -10,7 +10,8 @@ $(document).ready(function() {
   $('.carousel-indicators').html(carouselIndicators);
 
   $('.carousel').carousel();
-
+  $("#modal-gallery").modal("show");
+  
 });
 
 
