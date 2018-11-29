@@ -388,14 +388,6 @@ form h2{
 }
 
 
-
-
-
-
-
-
-
-
 /* .text-name{
   color: black;
   font-weight: bold;
@@ -409,10 +401,32 @@ form h2{
   margin-top: 40px;
   background-color: #8080802e;
 } */
-.parallax{
-  margin:0;
-  margin-top:-50px;
+.parallax {
+
+    background-image: url("../images/contactbackground.jpg");
+
+
+    /* filter:  brightness(160%) opacity(80%); */
+    /* Set a specific height */
+    min-height: 600px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    margin:0;
+    margin-top:-50px;
+
 }
+    @media screen and (max-width: 768px) {
+      .parallax {
+        background-attachment: inherit;
+        min-height: 234px;
+      }
+    }
+}
+
 
 .row{
 padding: 10px 0;
