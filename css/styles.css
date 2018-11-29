@@ -387,7 +387,6 @@ form h2{
   font-weight: 400;
 }
 
-
 /* .text-name{
   color: black;
   font-weight: bold;
@@ -476,6 +475,11 @@ padding: 10px 0;
 }
 .carousel .item img{
     margin: 0 auto; /* Align slide image horizontally center */
+}
+@media only screen and (max-width: 768px) {
+.myImg {
+    width: 100%;
+  }
 }
 
 
