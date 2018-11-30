@@ -6,7 +6,7 @@ $(document).ready(function() {
 
 
   var carouselItems = $('.img-responsive').clone().map((index, el) =>
-  $('<div class="item" />').toggleClass('active',index===0).append(el)[0]);
+  $('<div class="item" />').toggleClass('active',(index)===0).append(el)[0]);
   $('.carousel-inner').html(carouselItems);
 
 
