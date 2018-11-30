@@ -1,12 +1,19 @@
 $(document).ready(function() {
 
   $(".img-responsive").click(function(event){
+
+      var indexCarousel = $( ".img-responsive" ).index( this )
+
+      $('.carousel').carousel(indexCarousel);
       $("#modal-gallery").modal('show');
+
+
+
   });
 
 
   var carouselItems = $('.img-responsive').clone().map((index, el) =>
-  $('<div class="item" />').toggleClass('active',(index)===0).append(el)[0]);
+  $('<div class="item" />').toggleClass('active',index===0).append(el)[0]);
   $('.carousel-inner').html(carouselItems);
 
 
@@ -14,7 +21,7 @@ $(document).ready(function() {
   $('<li data-target="#carousel-example-generic" />').attr("data-slide-to", index)[0]);
   $('.carousel-indicators').html(carouselIndicators);
 
-  $('.carousel').carousel();
+  $('.carousel').carousel({interval:false});
 
 
 });
