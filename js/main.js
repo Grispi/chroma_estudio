@@ -1,15 +1,13 @@
 $(document).ready(function() {
 
   $(".img-responsive").click(function(event){
-
       $("#modal-gallery").modal('show');
-
   });
 
 
   var carouselItems = $('.img-responsive').clone().map((index, el) =>
-  $('<div class="item" />').toggleClass('active', index === 0).append(el)[0]);
-  $('.carousel-inner').html(carouselItems).html(carouselIndicators);
+  $('<div class="item" />').toggleClass('active',index===0).append(el)[0]);
+  $('.carousel-inner').html(carouselItems);
 
 
   var carouselIndicators = $('.myImg').map((index, el) =>
