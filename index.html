@@ -1,90 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-   <title>Chroma Estudio</title>
+<meta charset="utf-8">
+<title>Chroma Estudio</title>
+
+<!-- small icon in the browser tag -->
 <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon"/>
+
+<!-- fonts -->
 <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Fira+Mono" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
 
+<!-- bootstrap css and mobile device settings -->
 <link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
-<script src="js/bootstrap.min.js"></script>
-
-<script type="text/javascript">
-  $(document).ready(function(){
-    $('#residentialFilter a').click(function(){
-      $('div.responsive').css({
-        'display': 'none',
-      });
-      $('div.house').parent().css({
-        'display': '',
-      });
-    });
-
-
-    $('#multiFamilyFilter a').click(function(){
-      $('div.responsive').css({
-        'display': 'none',
-      });
-      $('div.multiFamily').parent().css({
-        'display': '',
-      });
-    });
-
-
-    $('#commercialFilter a').click(function(){
-      $('div.responsive').css({
-        'display': 'none',
-      });
-      $('div.commercial').parent().css({
-        'display': '',
-      });
-    });
-
-
-    $('#officesFilter a').click(function(){
-      $('div.responsive').css({
-        'display': 'none',
-      });
-      $('div.offices').parent().css({
-        'display': '',
-      });
-    });
-
-    $('#projectsFilter a').click(function(){
-      $('div.responsive').css({
-        'display': '',
-      });
-
-    });
-
-  });
-
-</script>
+<!-- css page link -->
+<link rel="stylesheet" href="css/styles.css">
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130239876-1"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-130239876-1');
+window.dataLayer = window.dataLayer || []; function
+gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config',
+'UA-130239876-1');
 </script>
-
 
 </head>
 <body>
   <header>
+    <!-- start navigation bar  -->
     <nav class="navigation-bar">
       <div class="logo-icon">
         <a class="logo" href="index.html">
@@ -93,37 +40,35 @@
       </div>
 
       <!-- Mobile-navigation bar -->
-
       <label class="hamburger-icon" for="toggle">&#9776;</label>
       <input type="checkbox" id="toggle"/>
 
       <div class="dropdown-menu pull-right">
         <ul class="hamburger-menu">
           <li class="dropdown-header">PROJECTS</li>
-           <li id="residentialFilter"><a href="#">RESIDENTIAL</a></li>
-           <li id="multiFamilyFilter"><a href="#" >MULTI-FAMILY</a></li>
-           <li id="commercialFilter"><a  href="#" >COMMERCIAL</a></li>
-           <li id="officesFilter"><a href="#" >OFFICES</a></li>
-           <li class="divider"></li>
-           <li class="dropdown-header">CONTACT</li>
-           <li><a href="contactus.html">CONTACT US</a></li>
-           <li class="divider"></li>
-           <li class="dropdown-header">SOCIAL</li>
-           <li>
+          <li id="residentialFilter"><a href="#">RESIDENTIAL</a></li>
+          <li id="multiFamilyFilter"><a href="#" >MULTI-FAMILY</a></li>
+          <li id="commercialFilter"><a  href="#" >COMMERCIAL</a></li>
+          <li id="officesFilter"><a href="#" >OFFICES</a></li>
+          <li class="divider"></li>
+          <li class="dropdown-header">CONTACT</li>
+          <li><a href="contactus.html">CONTACT</a></li>
+          <li class="divider"></li>
+          <li class="dropdown-header">SOCIAL</li>
+          <li>
              <a class="facebook-icon" href="https://www.facebook.com/chromaestudio.com.ar" target="_blank">FACEBOOK</a>
-           </li>
-           <li>
+          </li>
+          <li>
              <a class="instagram-icon" href="https://www.instagram.com/chroma_estudio/" target="_blank" >INSTAGRAM</a>
-           </li>
+          </li>
         </ul>
       </div>
-
       <!-- Ends Mobile-navigation bar -->
 
+      <!-- start desktop navigation bar  -->
       <div class="menus">
         <ul class="navigation">
-          <li id="projectsFilter"><a class="menu-nav" data-toggle="collapse" data-target="#demo" href="#demo" >PROJECTS</a></li>
-          <!-- <li><a class="navbar-brand" href="studio.html">STUDIO</a></li> -->
+          <li id="projectsFilter"><a class="menu-nav" data-toggle="collapse" data-target="#demo" href="#demo">PROJECTS</a></li>
           <li><a class="menu-nav" href="contactus.html">CONTACT</a></li>
         </ul>
         <ul class="dropdown collapse" id="demo">
@@ -134,24 +79,25 @@
         </ul>
       </div>
       <div class="menu-social">
-      <ul class="social-menu">
-        <li>
-          <a class="facebook-icon" href="https://www.facebook.com/chromaestudio.com.ar" target="_blank">
-            <img alt="facebook icon @clipartmax.com" src="images/f-icon-black-c.png" width="30">
-          </a>
-        </li>
-        <li>
-          <a class="instagram-icon" href="https://www.instagram.com/chroma_estudio/" target="_blank">
-            <img alt="instagram icon @clipartmax.com" src="images/i-icon-b-2.png" width="30">
-          </a>
-        </li>
-      </ul>
-    </div>
+        <ul class="social-menu">
+          <li>
+            <a class="facebook-icon" href="https://www.facebook.com/chromaestudio.com.ar" target="_blank">
+              <img alt="facebook icon @clipartmax.com" src="images/f-icon-black-c.png" width="30">
+            </a>
+          </li>
+          <li>
+            <a class="instagram-icon" href="https://www.instagram.com/chroma_estudio/" target="_blank">
+              <img alt="instagram icon @clipartmax.com" src="images/i-icon-b-2.png" width="30">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- Ends desktop navigation bar -->
     </nav>
   </header>
 
-
-<div class="container">
+  <!-- images grid -->
+  <div class="container">
   <div class="gallery-container">
 
     <div class="responsive">
@@ -257,19 +203,6 @@
           </article>
         </div>
       </div>
-
-    <!-- <div class="responsive">
-      <div class="gallery commercial">
-        <article>
-          <a class="projectName" href="doctor_obra_caballito.html">
-            <img alt="Doctor Obra Caballito" src="images/doctor_obra.jpg" width="293" height="293">
-            <div class="description">
-              <h3>Doctor Obra Caballito</h3>
-            </div>
-          </a>
-        </article>
-      </div>
-    </div> -->
 
     <div class="responsive">
       <div class="gallery house">
@@ -390,6 +323,7 @@
 
   </div>
 </div>
+<!-- Ends images grid -->
 
 <footer class="footer">
   <span class="text-muted"> Tel: (54911) 6868 2874 - mail:info@chroma-estudio.com -
@@ -397,4 +331,10 @@
   <a class="instagram-icon" href="https://www.instagram.com/chroma_estudio/" target="_blank"><img alt="instagram icon @clipartmax.com" src="images/i-icon-b-2.png" width="25"></a></span>
 </footer>
 
+<!-- jquery and javascript links -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
 </body>
+</html>

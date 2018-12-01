@@ -1,61 +1,79 @@
 $(document).ready(function() {
+  $(".img-responsive").click(function(event) {
+    // variable for the carousel index so when clicking the image
+    // show the same image in the carousel.-
+    var indexCarousel = $(".img-responsive").index(this);
 
-  $(".img-responsive").click(function(event){
+    // activate the carousel with the index
+    $(".carousel").carousel(indexCarousel);
 
-      var indexCarousel = $( ".img-responsive" ).index( this )
-
-      $('.carousel').carousel(indexCarousel);
-      $("#modal-gallery").modal('show');
-
-
-
+    // show the modal
+    $("#modal-gallery").modal("show");
   });
 
+  // variable for the images before clone
+  var images = $(".img-responsive");
+  // variable which duplicate each images and add the div tag
+  var carouselItems = images
+    // duplicate elemets otherwise they are taken out of the origin list
+    .clone()
+    // to each image wrap in the div tag with the class 'item'
+    // and then an active class to the first element
+    .map(function(index, img) {
+      return (
+        $('<div class="item" />')
+          .toggleClass("active", index === 0)
+          .append(img)
+          // i need to return a DOM element
+          .get(0)
+      );
+    });
 
-  var carouselItems = $('.img-responsive').clone().map((index, el) =>
-  $('<div class="item" />').toggleClass('active',index===0).append(el)[0]);
-  $('.carousel-inner').html(carouselItems);
+  // include the divs with the images in the .carousel-inner tag html
+  $(".carousel-inner").html(carouselItems);
 
+  // Indicator for the carousel
+  var carouselIndicators = images.map(
+    (index, el) =>
+      $('<li data-target="#carousel-example-generic" />').attr(
+        "data-slide-to",
+        index
+      )[0]
+  );
+  $(".carousel-indicators").html(carouselIndicators);
+  // without interval so doesn't cicle when is hidden
+  $(".carousel").carousel({ interval: false });
+  // end carousel and modal
 
-  var carouselIndicators = $('.myImg').map((index, el) =>
-  $('<li data-target="#carousel-example-generic" />').attr("data-slide-to", index)[0]);
-  $('.carousel-indicators').html(carouselIndicators);
-
-  $('.carousel').carousel({interval:false});
-
-
+  // filter menu in main.html
+  // first hidden all and then show only the div class i click
+  $("#residentialFilter a").click(function() {
+    $("div.responsive").css({ display: "none" });
+    $("div.house")
+      .parent()
+      .css({
+        display: ""
+      });
+  });
+  $("#multiFamilyFilter a").click(function() {
+    $("div.responsive").css({ display: "none" });
+    $("div.multiFamily")
+      .parent()
+      .css({ display: "" });
+  });
+  $("#commercialFilter a").click(function() {
+    $("div.responsive").css({ display: "none" });
+    $("div.commercial")
+      .parent()
+      .css({ display: "" });
+  });
+  $("#officesFilter a").click(function() {
+    $("div.responsive").css({ display: "none" });
+    $("div.offices")
+      .parent()
+      .css({ display: "" });
+  });
+  $("#projectsFilter a").click(function() {
+    $("div.responsive").css({ display: "" });
+  });
 });
-
-  //  /* activate the carousel */
-   // $("#modal-carousel").carousel({interval:false});
-  //
-  //  /* change modal title when slide changes */
-  //  $("#modal-carousel").on("slid.bs.carousel",       function () {
-  //       $(".modal-title")
-  //       .html($(this)
-  //       .find(".active img")
-  //       .attr("title"));
-  //  });
-  //
-  //  /* when clicking a thumbnail */
-  //  $(".row .thumbnail").click(function(){
-  //   var content = $(".carousel-inner");
-  //   var title = $(".modal-title");
-  //
-  //   content.empty();
-  //   title.empty();
-  //
-  // 	var id = this.id;
-  //    var repo = $("#img-repo .item");
-  //    var repoCopy = repo.filter("#" + id).clone();
-  //    var active = repoCopy.first();
-  //
-  //   active.addClass("active");
-  //   title.html(active.find("img").attr("title"));
-  // 	content.append(repoCopy);
-  //
-  //   // show the modal
-  // 	$("#modal-gallery").modal("show");
-  // });
-
-// });

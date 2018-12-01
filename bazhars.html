@@ -1,49 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-   <title>Chroma Estudio</title>
+<meta charset="utf-8">
+<title>Chroma Estudio</title>
+
+ <!-- small icon in the browser tag -->
 <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon"/>
+
+<!-- fonts -->
 <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Fira+Mono" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
-<link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-<link rel="stylesheet" href="css/styles.css">
+<!-- bootstrap css and mobile device settings -->
+<link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+<!-- css page link -->
+<link rel="stylesheet" href="css/styles.css">
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130239876-1"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-130239876-1');
+window.dataLayer = window.dataLayer || []; function
+gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config',
+'UA-130239876-1');
 </script>
 
-
 </head>
+
 <body class="projects">
 
+  <!-- facebook button first part -->
   <div id="fb-root"></div>
   <script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = 'https://connect.facebook.net/en_UK/sdk.js#xfbml=1&version=v3.2';
-    fjs.parentNode.insertBefore(js, fjs);
-
-  }(document, 'script', 'facebook-jssdk'));
+  var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js
+= d.createElement(s); js.id = id; js.src =
+'https://connect.facebook.net/en_UK/sdk.js#xfbml=1&version=v3.2';
+fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk'));
 </script>
 
 <header>
+  <!-- start navigation bar  -->
   <nav class="navigation-bar">
     <div class="logo-icon">
       <a class="logo" href="index.html">
@@ -52,7 +51,6 @@
     </div>
 
     <!-- Mobile-navigation bar -->
-
     <label class="hamburger-icon" for="toggle">&#9776;</label>
     <input type="checkbox" id="toggle"/>
 
@@ -66,7 +64,7 @@
          <li id="officesFilter"><a href="#" >OFFICES</a></li> -->
          <li class="divider"></li>
          <li class="dropdown-header">CONTACT</li>
-         <li><a href="contactus.html">CONTACT US</a></li>
+         <li><a href="contactus.html">CONTACT</a></li>
          <li class="divider"></li>
          <li class="dropdown-header">SOCIAL</li>
          <li>
@@ -77,13 +75,12 @@
          </li>
       </ul>
     </div>
-
     <!-- Ends Mobile-navigation bar -->
 
+    <!-- start desktop navigation bar  -->
     <div class="menus">
       <ul class="navigation">
         <li id="projectsFilter"><a class="menu-nav" data-toggle="collapse" data-target="#demo" href="index.html" >PROJECTS</a></li>
-        <!-- <li><a class="navbar-brand" href="studio.html">STUDIO</a></li> -->
         <li><a class="menu-nav" href="contactus.html">CONTACT</a></li>
       </ul>
       <ul class="dropdown collapse" id="demo">
@@ -107,11 +104,11 @@
       </li>
     </ul>
   </div>
+  <!-- Ends desktop navigation bar -->
   </nav>
 </header>
 
-
-
+<!-- start a row with two columns one for the text and other for the images-->
 <div class="container">
   <div class="row">
     <div class="col-md-4">
@@ -155,27 +152,17 @@
           <img class="img-responsive" src="images/bazhars/bazhars1.jpeg" alt="" style="width:100%">
         </div>
 
-
-        <!-- <div class="myImg pull-left">
-          <img class="img-responsive" src="images/bazhars/bazhars6.jpeg" alt="" style="width:100%">
-        </div> -->
-
     </div>
   </div>
 
-
-
+  <!-- facebook button -->
   <iframe class="col-md-8 pull-right" src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fchromaestudio.com.ar%2F&width=300&layout=standard&action=like&size=small&show_faces=true&share=true&height=80&appId" width="300" height="80" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
 </div>
 
-
+<!-- start modal and carousel gallery  -->
 <div class="modal" id="modal-gallery" role="dialog" >
   <div class="modal-dialog">
     <div class="modal-content">
-      <!-- <div class="modal-header">
-          <button class="close" type="button" data-dismiss="modal">×</button>
-          <h3 class="modal-title"></h3>
-      </div> -->
         <div class="modal-body">
           <div id="carousel-example-generic" class="carousel slide">
 
@@ -196,7 +183,6 @@
               <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
               <span class="sr-only">Next</span>
             </a>
-
           </div>
 
         <div class="modal-footer">
@@ -214,6 +200,9 @@
   <a class="instagram-icon" href="https://www.instagram.com/chroma_estudio/" target="_blank"><img alt="instagram icon @clipartmax.com" src="images/i-icon-b-2.png" width="25"></a></span>
 </footer>
 
+<!-- jquery and javascript links -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
