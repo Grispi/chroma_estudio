@@ -410,3 +410,13 @@ form h2 {
     width: 100%;
   }
 }
+
+/* project text  */
+hr {
+  border-color: #c5c5c5;
+}
+p.projectText {
+  font-size: 24px;
+  line-height: 23px;
+  letter-spacing: 1px;
+}

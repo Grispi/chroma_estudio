@@ -1,33 +1,29 @@
 $(document).ready(function() {
+  // variable for the carousel index so when clicking the image
+  // show the same image in the carousel.-
   $(".img-responsive").click(function(event) {
-    // variable for the carousel index so when clicking the image
-    // show the same image in the carousel.-
     var indexCarousel = $(".img-responsive").index(this);
-
-    // activate the carousel with the index
     $(".carousel").carousel(indexCarousel);
 
     // show the modal
     $("#modal-gallery").modal("show");
   });
 
-  // variable for the images before clone
+  // variable for the images before clone,
+  // which duplicate each images and add the div tag
+  // duplicate elemets otherwise they are taken out of the origin list
+  // to each image wrap in the div tag with the class 'item'
+  // and then an active class to the first element
   var images = $(".img-responsive");
-  // variable which duplicate each images and add the div tag
-  var carouselItems = images
-    // duplicate elemets otherwise they are taken out of the origin list
-    .clone()
-    // to each image wrap in the div tag with the class 'item'
-    // and then an active class to the first element
-    .map(function(index, img) {
-      return (
-        $('<div class="item" />')
-          .toggleClass("active", index === 0)
-          .append(img)
-          // i need to return a DOM element
-          .get(0)
-      );
-    });
+  var carouselItems = images.clone().map(function(index, img) {
+    return (
+      $('<div class="item" />')
+        .toggleClass("active", index === 0)
+        .append(img)
+        // i need to return a DOM element
+        .get(0)
+    );
+  });
 
   // include the divs with the images in the .carousel-inner tag html
   $(".carousel-inner").html(carouselItems);
